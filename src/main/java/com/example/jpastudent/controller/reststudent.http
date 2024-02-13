@@ -1,0 +1,12 @@
+GET http://localhost:9000/students/Yussy
+Accept: application/json
+
+###
+GET http://localhost:9000/addstudent
+Accept: application/json
+
+###
+GET http://localhost:9000/students
+Accept: application/json
+
+###
