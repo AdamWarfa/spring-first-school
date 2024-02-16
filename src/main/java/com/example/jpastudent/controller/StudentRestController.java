@@ -38,4 +38,15 @@ public class StudentRestController {
         return studentRepository.findAllByName(name);
     }
 
+    @GetMapping("/unicode/{i}")
+    public String unicodeToChar(@PathVariable int i) {
+        char c = (char)i;
+        return "unicode=" + i + " char=" + c;
+    }
+
+    @GetMapping("/char/{c}")
+    public String charToUnicode(@PathVariable char c) {
+        int i = c;
+        return "char=" + c + " unicode=" + i;
+    }
 }
